@@ -72,3 +72,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+                      - name: Hugo setup
+                uses: peaceiris/actions-hugo@v3.0.0
+            
