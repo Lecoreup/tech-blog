@@ -41,15 +41,3 @@ jobs:
         permissions:
       id-token: write
       contents: read
-      
-permissions:
-  id-token: write
-  contents: read
-
-steps:
-  - uses: actions/checkout@v3
-  - uses: aws-actions/configure-aws-credentials@v2
-    with:
-      role-to-assume: arn:aws:iam::529952016010:role/GitHubTechBlog
-      aws-region: Global
-  - run: aws sts get-caller-identity
