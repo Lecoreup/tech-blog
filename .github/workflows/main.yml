@@ -37,4 +37,8 @@ jobs:
   uses: peaceiris/actions-hugo@v3
   with:
     hugo-version: 'latest'
-    
+
+        permissions:
+      id-token: write
+      contents: read
+      
