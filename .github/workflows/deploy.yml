@@ -95,15 +95,14 @@ Resources:
           - Effect: Allow
             Action: sts:AssumeRoleWithWebIdentity
             Principal:
-              Federated: !If 
-                - CreateOIDCProvider
-                - !Ref GithubOidc
-                arn:aws:iam::529952016010:role/GitHubTechBlog
+              Federated: 
+                - arn:aws:iam::529952016010:role/GitHubTechBlog
+                - ""
             Condition:
               StringEquals:
                 token.actions.githubusercontent.com:aud: sts.amazonaws.com
               StringLike:
-                token.actions.githubusercontent.com:sub: !Sub repo:${Lecoreup}/${tech-blog}:*
+                token.actions.githubusercontent.com:sub: repo:${Lecoreup}/${tech-blog}:*
 
   GithubOidc:
     Type: AWS::IAM::OIDCProvider
