@@ -1,9 +1,9 @@
-baseURL = "http://leestechblog.s3-website-eu-west-1.amazonaws.com/"
+baseURL = "https://d2va8fpl9a8wq4.cloudfront.net/"
 # [en, zh-cn, fr, ...] determines default content language
 defaultContentLanguage = "en"
 # language code
 languageCode = "en"
-title = "NAME_OF_YOUR_BLOG"
+title = "Lee's Tech Blog"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "LoveIt"
@@ -29,59 +29,43 @@ theme = "LoveIt"
     # Menu config
     [languages.en.menu]
       [[languages.en.menu.main]]
-        identifier = "posts"
-        # you can add extra information before the name (HTML format is supported), such as icons
-        pre = ""
-        # you can add extra information after the name (HTML format is supported), such as icons
-        post = ""
-        name = "Posts"
-        url = "/posts/"
-        # title will be shown when you hover on this menu link.
-        title = ""
+        identifier = "home"
+        name = "Home"
+        url = "/"
         weight = 1
       [[languages.en.menu.main]]
-        identifier = "tags"
-        pre = ""
-        post = ""
-        name = "Tags"
-        url = "/tags/"
-        title = ""
+        identifier = "projects"
+        name = "Projects"
+        url = "/posts/"
         weight = 2
       [[languages.en.menu.main]]
-        identifier = "categories"
-        pre = ""
-        post = ""
-        name = "Categories"
-        url = "/categories/"
-        title = ""
-        weight = 3
-      [[languages.en.menu.main]]
         identifier = "about"
-        pre = ""
-        post = ""
         name = "About"
         url = "/about/"
-        title = ""
+        weight = 3
+      [[languages.en.menu.main]]
+        identifier = "tags"
+        name = "Tags"
+        url = "/tags/"
         weight = 4
       [[languages.en.menu.main]]
         identifier = "github"
         pre = "<i class='fab fa-github fa-fw'></i>"
-        post = ""
         name = ""
-        url = "https://github.com/Lecoreup/"
+        url = "https://github.com/Lecoreup/tech-blog"
         title = "GitHub"
         weight = 5
 
 [languages.en.params]
-  googleanalytics = "YOUR_GOOGLE_ANALYTICS_ID"
+  googleanalytics = ""
 
 [params]
   #  LoveIt theme version
   version = "0.2.X"
   # site description
-  description = "Description"
+  description = "Lee Powell's technical blog documenting AWS DevOps engineering projects, cloud architecture, and automation."
   # site keywords
-  keywords = ["Theme", "Hugo"]
+  keywords = ["AWS", "DevOps", "Cloud Engineering", "CI/CD", "Infrastructure as Code"]
   # site default theme ("light", "dark", "auto")
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
@@ -97,7 +81,7 @@ theme = "LoveIt"
   #  App icon config
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
-    title = "NAME_OF_YOUR_BLOG"
+    title = "Lee's Tech Blog"
     # whether to omit favicon resource links
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
@@ -406,7 +390,7 @@ theme = "LoveIt"
     [params.page.seo]
       # Publisher info
       [params.page.seo.publisher]
-        name = "xxxx"
+        name = "Lee Powell"
         [params.page.seo.publisher.logo]
           url = "logo.png"
           width = 127
