@@ -1,4 +1,4 @@
-baseURL = "https://yourdomain.com"
+baseURL = "https://d2va8fpl9a8wq4.cloudfront.net/"
 # [en, zh-cn, fr, ...] determines default content language
 defaultContentLanguage = "en"
 # language code
@@ -68,20 +68,20 @@ theme = "LoveIt"
         pre = "<i class='fab fa-github fa-fw'></i>"
         post = ""
         name = ""
-        url = "https://yourgithuburl"
+        url = "https://github.com/Lecoreup/tech-blog"
         title = "GitHub"
         weight = 5
 
 [languages.en.params]
-  googleanalytics = "YOUR_GOOGLE_ANALYTICS_ID"
+  googleanalytics = ""
 
 [params]
   #  LoveIt theme version
   version = "0.2.X"
   # site description
-  description = "Description"
+  description = "Lee Powell's technical blog documenting AWS DevOps engineering projects, cloud architecture, and automation."
   # site keywords
-  keywords = ["Theme", "Hugo"]
+  keywords = ["AWS", "DevOps", "Cloud Engineering", "CI/CD", "Infrastructure as Code"]
   # site default theme ("light", "dark", "auto")
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
@@ -406,7 +406,7 @@ theme = "LoveIt"
     [params.page.seo]
       # Publisher info
       [params.page.seo.publisher]
-        name = "xxxx"
+        name = "Lee Powell"
         [params.page.seo.publisher.logo]
           url = "logo.png"
           width = 127
